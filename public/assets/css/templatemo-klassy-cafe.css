@@ -342,7 +342,14 @@ header
 .background-header .main-nav .nav li.submenu:after {
   color: #2a2a2a;
 }
-
+.hdr-clr{ background-color: #4a2c2a; background: rgba(74, 44, 42, 0.49);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+  
+  margin-top: 10px;
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(74, 44, 42, 0.61);}
 .header-area .main-nav .nav li.submenu ul {
   position: absolute;
   width: 200px;
@@ -657,8 +664,9 @@ banner
 }
 
 #top .left-content {
-  background-image: url(../images/top-left-bg.jpg);
+  background-image: url("https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&q=80&w=1961&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center center;
+  
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -669,6 +677,7 @@ banner
 #top .left-content .inner-content {
   position: absolute;
   top: 50%;
+  backdrop-filter: blur(3px);
   transform: translate(-50%, -50%);
   left: 50%;
 }
